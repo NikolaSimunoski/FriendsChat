@@ -1,0 +1,1011 @@
+*{
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    }
+
+
+body{
+    margin: 0 auto;
+    padding: 0; 
+    background-size: cover;
+}
+body.loading {
+    overflow: hidden;   
+    display: block;
+}
+.root{
+    
+   width: 100%;
+   height:100%;
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around; 
+   
+  
+
+}
+
+#logContainer{
+    width: 1100px;
+    height:500px;
+    /* background-color: rgb(92, 129, 129); */
+    /* opacity: 0.8; */
+    border-radius: 3px;
+    /* border:2px solid rgb(211, 211, 211); */
+    display: flex;
+    justify-content: space-between;
+    
+}
+#logoDiv{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px double rgb(28, 128, 209);
+    margin: 20px;
+    
+}
+#logoImage{
+    width: 100%;
+    height: 100%;
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+.logReg{
+    width:45%;
+    height: 100%;
+     border: 3px solid dodgerblue;
+    background-color: rgb(92, 129, 129);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    opacity:0.8;
+    
+}
+
+@keyframes underline {
+    0%{
+        text-decoration: underline dodgerblue; 
+        
+    }
+    25%{
+        text-decoration: underline #ffbf00;
+        
+    }
+    50%{
+        text-decoration: underline dodgerblue;
+        
+    }
+    75%{
+        text-decoration: underline #ffbf00;
+        
+    }
+    100%{
+        text-decoration: underline dodgerblue;
+        
+    }
+}
+.topLogDiv{
+    width: 85%;
+    height: 29%;
+    /* border:2px solid red; */
+    display: flex;
+}
+
+.logDiv{
+    width: 85%;
+    height: 35%;
+    /* border:2px solid red; */
+}
+
+.bottomLogDiv{
+    width: 85%;
+    height: 24%;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.topF{
+width: 20%;
+height: 100%;
+
+}
+
+.topS{
+    width: 80%;
+    height: 100%;
+   
+}
+
+.logoLogReg{
+    width: 60px;
+    height:60px;
+    
+    
+}
+#logInImageR{
+    width:63px;
+    height:63px;
+}
+
+.topF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.krug{
+    width:130px;
+    height:130px;
+    /* border-radius: 50%;
+    border:2px solid white; */
+    position: absolute;
+    background:transparent;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right:0;
+    top:46%;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+#krugText{
+    font-family: 'Luckiest Guy', cursive;
+      
+    animation: color 2s linear infinite;
+}
+
+@keyframes color {
+    0%{
+        color:  #003d99;
+        font-size: 110px;
+    }
+    40%{
+        
+        color: rgb(173, 31, 173);
+        font-size: 90px;
+    }
+    70%{
+        
+        color: #ffbf00;
+        font-size: 70px;
+    }
+    100%{
+        color:  #003d99;
+        font-size: 110px;
+    }
+}
+
+.footer{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    /* display: flex; */
+    border-top: 2px solid #ffbf00;
+    
+}
+
+#codeacademyLogo{
+  width: 300px;
+  float: right;
+  background: #ffbf00;
+  
+}
+
+#textFooter{
+    float:left;
+    padding-left: 40px;
+    
+}
+
+.topTex{
+    font-size: 29px;
+    color: black;
+    font-family: 'Courgette', cursive;
+    margin-bottom: 7px;
+    font-weight: bold;
+    text-decoration: underline dodgerblue;
+    animation: underline 7s linear infinite;
+    transition: ease-in-out;
+    
+}
+
+.botTex{
+    font-size: 40px;
+    color: rgb(252, 175, 10);
+    top: 0px;
+    /* font-weight: bold; */
+    font-family: 'Luckiest Guy', cursive;
+
+}
+
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius:10%;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   font-weight: bold;
+   font-size:16px; 
+   border: 1px solid #ffbf00;
+  }
+  
+  .input-field:focus{
+    border: 3px solid dodgerblue;
+    border-left: none;
+  }
+  .input-field:hover{
+    border: 3px solid #ffbf00; 
+    border-left: none;
+    
+  }
+
+  #leftLogoDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #rightLogoDiv{
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #rightBottom{
+      height: 10%;
+  }
+
+  .icon{
+
+    background-color:#ffbf00;
+    color:#306beb;
+    
+  }
+  .icon:hover{
+      background-color: #306beb;
+      color:#ffbf00;
+      border-left:2px solid #ffbf00;
+      border-top: 2px solid #ffbf00;
+      border-bottom:2px solid #ffbf00;
+      
+  }
+
+  .six{
+    border-bottom: 0px;
+}
+
+
+
+  .regButton{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    float:right;
+   background-color: #003d99;
+   border:none;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: 'Courgette', cursive;
+   color: #ffbf00;
+   
+  }
+
+  .regButton:hover{
+    width: 230px;
+    height: 100px;
+    background-color:#ffbf00;
+    border:3px solid #003d99;
+    color: #003d99;
+    font-size:40px;
+  }
+
+#codeacademyLogo:hover{
+    border: 3px solid rgb(143, 25, 143);
+    opacity: 0.7;
+}
+
+#textFooter:before{
+    font-family: FontAwesome;
+    content:"\f129";
+    padding-right:6px;
+    font-size: 23px;
+    color:#ffbf00;
+}
+.fa-paper-plane-o{
+    font-family: FontAwesome;
+    content:"\f1d8";
+    font-weight: bold;
+    font-size: 20px;
+    color:dodgerblue;
+    
+}
+#textFooter{
+    font-size: 16px;
+    /* font-weight: bold; */
+    font-family:Tahoma;
+   
+}
+.error{
+    margin:0px;
+    padding:0px;
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+    font-family:Tahoma;
+    animation: font 0.5s linear infinite;
+}
+
+@keyframes font {
+    0%{
+        color:  black;
+        
+    }
+    50%{
+        
+        color: white;
+        
+    }
+    100%{
+        
+        color:  black;
+        
+    }
+}
+
+
+.chatRoot{
+width:95%;
+height:100vh;  
+/* background: linear-gradient(to right, #348AC7, #7474BF); */
+/* display: flex;
+flex-wrap: wrap; */
+/* justify-content: center; */
+margin:0 auto;
+padding:0; 
+/* display: block; */
+position: relative;
+}
+
+#footer{
+width: 100%;
+height:90px;
+/* border-bottom:3px solid red; */
+margin:20px 0px 20px 0px;
+display: flex;
+}
+
+.footerElements{
+    width:33.3%;
+    height: 100%;
+
+   
+}
+
+#logoImageFooter{
+    width: 100%;
+    height: 100%;
+     border-radius: 50%;
+     object-fit: cover;
+     animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4.5s;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 17px 13px dodgerblue;
+}
+
+#LogoFooterDiv{
+    
+    height:100%;
+    border-radius: 50%;
+    width:100px;
+    /* border: 3px double rgb(35, 109, 182); */
+}
+/* #mus{
+    
+} */
+#footerCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerLeft{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#footerRight{
+    margin-top: 30px;   
+}
+
+.searchFriends{
+    width:150px;
+    transition: 1s;
+    float: right;  
+    border-radius: 8px;
+    font-size: 20px;
+    border:5px double  rgb(28, 128, 209);
+    outline: none;
+    background-color: black;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    animation: line 9s linear infinite;
+    height: 30px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.searchFriends:focus{
+    width: 250px;
+    transition: 0.5px;  
+    box-shadow: 0px 0px 17px 13px rgb(206, 7, 107);
+    color: black;
+    background: dodgerblue;
+    animation: none;
+}
+
+.searchFriends::placeholder{
+    color: rgb(206, 7, 107);
+}
+
+
+@keyframes rotation {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+      transform: rotate3d(0, 1, 0, 180deg);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+
+.card-carousel{
+    width:100%;
+    height: 100px;
+    /* border:2px solid yellow;  */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    /* overflow: hidden; */
+    
+    
+    
+    
+}
+ 
+.my-card{
+    height: 80%;
+    width:60px;
+    /* overflow: hidden; */
+    float: left;
+
+    
+    
+
+}
+.imagesSlider{
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+}
+
+.sliderFriendsName{
+color: aqua;
+/* position: absolute; */
+margin: 0;
+padding: 0;
+font-size: 13px;
+font-weight: bold;
+font-family:Tahoma;
+
+/* display: flex;
+flex-direction: row-reverse; */
+/* align-items: flex-start; */
+}
+
+
+.chatContaier{
+    width: 100%;
+    height: 600px;
+    /* border:2px solid red; */
+    display: flex;
+    opacity:0.8;
+    margin-top:15px;
+}
+.chatContaierR{
+width:25%;
+height: 100%;
+/* background-color: #ffbf00; */
+}
+.chatContaierL {
+    width:25%;
+height: 100%;
+/* background-color: #ffbf00; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.clock{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.chatContaierC{
+width: 50%;
+height: 100%;
+/* background-color: #306beb; */
+}
+
+.menuContainer{
+    height:60%;
+    width: 100%;
+    
+   /* margin-top: 50%; */
+}
+.menuItems{
+    height: 33%;
+    width:100%;
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftMenuP{
+font-weight: 800;
+color:black;
+font-size:15px;
+font-family: Impact, Charcoal, sans-serif;
+}
+
+
+.menuItems:hover{
+    background-color: black;
+    border-radius: 8px;
+}
+
+.menuItems:hover .leftMenuP{
+    color:#ffbf00;
+}
+
+.changePassW{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: none;
+    
+}
+
+.changePassMessage{
+    font-weight: bold;
+}
+.closeChangePass{
+font-size: 30px;
+color: black;
+font-family: Impact, Charcoal, sans-serif;
+font-weight: 700;
+width: 100%;
+text-align: center;
+}
+
+.passConf{
+width:80%;
+background-color: dodgerblue;
+border: 2px solid black;
+font-family: Impact, Charcoal, sans-serif;
+border-radius:5px;
+}
+.inputChangePass{
+height: 25px;
+border-radius: 7px;
+border:2px solid dodgerblue;
+width: 80%;
+outline: none;
+text-align: center;
+font-weight: bold;
+color:black;
+}
+
+.chatContaierC{
+    display: flex;
+}
+
+#chatContCenter{
+    width: 70%;
+    height: 100%;
+    /* background-color: rgb(48, 114, 18); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chatContLeft{
+    width: 15%;
+    height: 100%;
+    /* background-color: rgb(31, 2, 8); */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+
+#chatContRight{
+    width: 15%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap-reverse;
+   /* align-items:flex-end; */
+    
+}
+.friendDivImgConversation{
+    width:90%;
+    height: 110px;
+    border: 3px solid rgb(226, 25, 176);
+    text-align: center;
+    border-radius: 7px;
+    margin-top:8px;
+    margin-bottom:8px;   
+}
+.friendImgConversation{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.myDivImgConversation{ 
+    display: flex;
+    width:90%;
+    height: 110px;
+    border: 3px solid rgb(25, 86, 253);
+    /* text-align: center; */
+    border-radius: 7px; 
+    object-fit: cover;
+    margin-bottom:8px;  
+}
+.sliderFriendsNamee{
+    color: rgb(226, 25, 176);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Tahoma;
+}
+#myTextName{
+    height: 0px;
+    color: rgb(25, 86, 253);
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Tahoma;
+    margin-bottom: -210px;
+}
+
+.file-upload{
+    visibility: hidden;
+}
+.pictureForSend{
+    visibility: hidden;
+}
+
+.chatContainerWindow{
+    width:90%;
+    height:100%;
+    
+
+}
+
+.chatWindow{
+    width:100%;
+    height:80%;
+    border:1px solid #ffbf00;
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px 13px #ffbf00;
+    
+}
+
+.chatFooter{
+    width: 100%;
+    height: 20%;
+   
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chatFooterTop{
+    width: 100%;
+    height:40%;
+    display: flex;
+    /* background-color: #9900ff */
+    margin-top: 20px;
+
+    
+}
+.chatFooterBottom{
+    width:100%;
+    height:35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.chatSendDivFooter{
+    height: 100%;
+    width:20%;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: 2px double dodgerblue;
+    border-right: 2px solid dodgerblue;
+}
+.inputMSGsend{
+    width: 80%;
+    padding-left: 10px;
+    font-size: 16px;
+    border:none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-left: 2px solid dodgerblue;
+    outline: none;
+    background: black;
+    box-shadow: none;
+    color:white;
+    
+}
+
+.chatSendDivFooter:hover{
+    border-left: 2px double rgb(178, 16, 211);
+    border-right: 2px solid rgb(178, 16, 211);
+}
+.inputMSGsend:focus{
+    border-left: 2px solid rgb(178, 16, 211);
+}
+.chatSendDivFooter:hover .fa-paper-plane-o{
+    color: rgb(178, 16, 211);
+}
+.chatWindow{ 
+    overflow-y: scroll; 
+    /* padding-right: 10px;
+    padding-left:10px; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    float: right;
+}
+.MSGcontainer{
+    width:100%;
+   margin:5px;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+   box-sizing: border-box;
+   height:50px;
+   float: right;
+}
+.MSGtext{
+   background-color: rgb(25, 86, 253);
+   border:1px solid #ffbf00;
+   color:black;
+   padding: 14px;
+   line-height: 15px;
+   font-size: 16px;
+   border-radius:7px;
+   margin-bottom:15px;
+   width:15px 90%;
+   position: relative;
+   float: right;
+} 
+
+.chatWindow::-webkit-scrollbar {
+    width: 10px; 
+  }
+  .chatWindow::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  .chatWindow::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  .chatWindow::-webkit-scrollbar-thumb:hover {
+    background: #ffbf00;   
+  }
+
+  .sendVIE{
+    width:32%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-top:2px solid dodgerblue;
+    
+  }
+  .sendVideo{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    
+  }
+  .sendImg{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+  }
+  .sendEmoji{
+      border-left:2px solid dodgerblue;
+      border-right:2px solid dodgerblue;
+  }
+
+  .videoImageDiv{
+        width:100%;
+        height:80%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+  }
+
+  .clock{
+      width: 100%;
+      height:20%;
+      color: rgb(7, 1, 8);
+      font-size: 22px;
+      font-family: Orbitron;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+  }
+
+  .videoImage{
+    width:65%;
+    height:70%;
+    background: black;
+    border-radius: 10px;
+    border:2px solid rgb(253, 200, 55);
+    visibility: hidden;
+  }
+  .sendVIE:hover{
+    background:#ffbf00;
+  }
+  .sendVIE:hover .fa-file-video-o{
+    font-size: 30px;
+      color: black;
+  }
+  .sendVIE:hover .fa-image{
+    font-size: 30px;
+    color: black;
+}
+.sendVIE:hover .fa-smile-o{
+    font-size: 30px;
+    color: black;
+}
+
+  .fa-image{
+    font-family: FontAwesome;
+    content:"\f03e";
+    color: #ffbf00;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .fa-file-video-o{
+    font-family: FontAwesome;
+    content:"\f1c8";
+    color: #ffbf00;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .fa-smile-o{
+    font-family: FontAwesome;
+    content:"\f118";
+    color: #ffbf00;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .dataEmoji{
+    width:100%;
+    display: flex;
+    flex-wrap:wrap;
+    overflow:scroll;
+    overflow-x: hidden;
+   height:100%;
+   border-radius: 1px;
+   font-size: 18px;
+    
+  }
+  .video-preview{
+      width: 300px;
+      height: 200px;
+  }
+#myImgSend{
+    width: 150px;
+    height: 200px;
+    float:right;
+    margin:4px;
+    border-radius: 5px;
+}
+
+  .upload-video-file{
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
+  .popUp{
+      position: absolute;
+      width: 30%;
+      height:70%;
+      /* float:top; */
+     
+  }
+  .span{
+      position: absolute;
+      font-size: 25px;
+      color:dodgerblue;
+      font-weight: bold;
+    object-fit: cover;
+  }
+  .imgPop{
+      
+  }

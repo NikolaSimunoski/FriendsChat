@@ -1,0 +1,18 @@
+.rootDivMain{
+    width:200px;
+    height:300px;
+    background-color: brown;
+}
+
+.proba{
+    width:300px;
+    height:120px;
+    background-color: yellow;
+}
+
+body{
+    margin:0 auto;
+    padding:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
